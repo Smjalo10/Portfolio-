@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sulaiman Muhammad Jalo | Data, Design and Web</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&display=swap">
+<style>
+:root{
+  --bg:#EEF2EF; --ink:#13262F; --muted:#485B64; --line:#C5D1CC;
+  --accent:#0F6B62; --on-accent:#fff; --mark:#E9B92E;
+  --head:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1B21; --ink:#E6EEEA; --muted:#9DB0A9; --line:#27393F;
+    --accent:#5FD0C2; --on-accent:#0F1B21; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1B21; --ink:#E6EEEA; --muted:#9DB0A9; --line:#27393F;
+  --accent:#5FD0C2; --on-accent:#0F1B21; color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px;padding:20px 0;border-bottom:1px solid var(--line)}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;padding:4px 0}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.hero{padding:56px 0 48px}
+.name{border-left:8px solid var(--mark);padding-left:18px;margin:0 0 22px;
+  font:800 clamp(2.4rem,9vw,4rem)/1.02 var(--head);letter-spacing:-.02em}
+.roles{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 26px;padding:0;list-style:none;
+  font:700 1.05rem var(--head);color:var(--accent)}
+.hero p{max-width:60ch;margin:0 0 14px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:700;text-decoration:none;
+  background:var(--accent);color:var(--on-accent);border:2px solid var(--accent)}
+.btn.alt{background:transparent;color:var(--accent)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font:800 clamp(1.7rem,6vw,2.3rem)/1.1 var(--head);letter-spacing:-.01em;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 22px}
+.row{padding:18px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+h3{font:700 1.2rem/1.25 var(--head);margin:0 0 4px}
+.row p{margin:0;color:var(--muted);max-width:62ch}
+.list{margin:0;padding:0;list-style:none}
+.list li{padding:14px 0 14px 18px;border-left:3px solid var(--line);margin-bottom:10px}
+.list b{font-family:var(--head);font-size:1.05rem}
+.list span{display:block;color:var(--muted)}
+.facts{margin:20px 0 0;padding:0;list-style:none}
+.facts li{padding:6px 0}
+.facts b{display:inline-block;min-width:6.5rem;font-family:var(--head)}
+.facts a{color:var(--accent);overflow-wrap:anywhere}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#activities">Activities</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero" id="home">
+    <h1 class="name">Sulaiman Muhammad Jalo</h1>
+    <ul class="roles">
+      <li>Technology Enthusiast</li><li>Data Analyst</li><li>UI/UX Designer</li><li>Web Developer</li>
+    </ul>
+    <p>I transform ideas into practical digital solutions through technology, creativity, and innovation. My interests span data analytics, user experience design, web development, and networking. I enjoy solving real-world problems and creating digital experiences that make a difference.</p>
+    <p>I’m passionate about continuous learning, collaborating with innovative minds, and using technology to drive meaningful impact. Let’s connect, collaborate, and build something impactful together.</p>
+    <div class="btns">
+      <a class="btn" href="#contact">Contact me</a>
+      <a class="btn alt" href="#projects">See my projects</a>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="lead">Work I’ve done and topics I’m exploring.</p>
+    <div class="row"><h3>Customer Feedback Analysis</h3><p>Analyzed customer feedback to identify recurring issues, uncover trends, and generate actionable insights using data analysis tools.</p></div>
+    <div class="row"><h3>School Management System</h3><p>Exploring the development of a web-based system to help manage student records, academic information, and school administrative activities.</p></div>
+    <div class="row"><h3>Networking Practical Labs</h3><p>Practiced networking concepts, IP addressing, subnetting, and network configuration to strengthen practical networking skills.</p></div>
+    <div class="row"><h3>Brain Tumor Detection Research</h3><p>Exploring the application of Convolutional Neural Networks (CNNs) and medical imaging techniques for brain tumor detection research.</p></div>
+    <div class="row"><h3>Personal Portfolio Website</h3><p>Developing a professional online presence to showcase my technical skills, projects, services, and experience.</p></div>
+  </section>
+
+  <section id="activities">
+    <h2>Activities and leadership</h2>
+    <p class="lead">How I contribute beyond coursework.</p>
+    <ul class="list">
+      <li><b>NACOS leadership</b><span>Contributing to student engagement, departmental initiatives, and technology-related activities through the National Association of Computing Students.</span></li>
+      <li><b>Technology community building</b><span>Supporting knowledge sharing, collaboration, and practical learning among students interested in technology.</span></li>
+      <li><b>Networking education</b><span>Organizing and participating in networking learning activities covering theoretical concepts and practical exercises.</span></li>
+      <li><b>Youth development</b><span>Taking part in youth engagement initiatives focused on leadership, innovation, and community development.</span></li>
+      <li><b>Research and continuous learning</b><span>Exploring emerging technologies, data analytics, Artificial Intelligence, and software development.</span></li>
+      <li><b>Innovation and hackathons</b><span>Interested in collaborative technology competitions and initiatives that turn ideas into practical solutions.</span></li>
+    </ul>
+  </section>
+
+  <section id="services">
+    <h2>Services I offer</h2>
+    <p class="lead">Ways I can help you or your organization.</p>
+    <div class="row"><h3>Data analysis and visualization</h3><p>Transform raw data into meaningful insights, reports, and visualizations that support informed decision-making.</p></div>
+    <div class="row"><h3>UI/UX design</h3><p>Create user-focused interface designs, wireframes, and prototypes that prioritize usability and accessibility.</p></div>
+    <div class="row"><h3>Web development</h3><p>Build and customize responsive websites for individuals, businesses, and organizations.</p></div>
+    <div class="row"><h3>Networking support</h3><p>Assist with networking fundamentals, IP addressing, subnetting, network configuration, and basic troubleshooting.</p></div>
+    <div class="row"><h3>Microsoft Office and documentation</h3><p>Prepare professional documents, spreadsheets, presentations, reports, and other digital materials.</p></div>
+    <div class="row"><h3>Digital solutions and technology support</h3><p>Help individuals and organizations explore practical technology solutions that improve productivity and simplify workflows.</p></div>
+  </section>
+
+  <section id="contact">
+    <h2>Let’s connect</h2>
+    <p class="lead">I’m open to professional opportunities, freelance projects, technology collaborations, and innovation initiatives. Have a project, an idea, or an opportunity to collaborate? Reach out and we can explore how to build something impactful together.</p>
+    <div class="btns">
+      <a class="btn" href="mailto:sulaimanmuhammadjalo@gmail.com">Send an email</a>
+      <a class="btn alt" href="https://wa.me/2348069157980">Message on WhatsApp</a>
+    </div>
+    <ul class="facts">
+      <li><b>Name</b> Sulaiman Muhammad Jalo</li>
+      <li><b>Email</b> <a href="mailto:sulaimanmuhammadjalo@gmail.com">sulaimanmuhammadjalo@gmail.com</a></li>
+      <li><b>Phone</b> <a href="tel:+2348069157980">+234 806 915 7980</a></li>
+      <li><b>Location</b> Nigeria</li>
+      <li><b>GitHub</b> <a href="https://github.com/Smjalo10">github.com/Smjalo10</a></li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Sulaiman Muhammad Jalo</footer>
+</div>
+</body>
+</html>
